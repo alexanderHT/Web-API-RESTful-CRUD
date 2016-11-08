@@ -14,7 +14,7 @@ module.exports = {
   insertMemo : function(req, res, next){
     // res.header("orgin") / manual way if you are not using cors package
     var data = JSON.parse(req.body.data);
-
+    console.log(data);
     var newMemo = Memo({
       id      : data.id,
       title   : data.title,
